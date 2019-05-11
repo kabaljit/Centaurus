@@ -1,0 +1,204 @@
+@media screen and (min-width: 768px) {
+
+    .login-container {
+        height: 625px;
+        width: 768px;
+        margin-left: calc(50vw - 384px);
+        border: 1px solid black;
+        background-color: lightslategrey;
+    }
+
+    .fdm-logo {
+        background-color: white;
+    }
+
+    .fdm-logo-login {
+        height: 33%;
+        width: 33%;
+        display: inherit;
+        margin-left:33%;
+        margin-top: 8.25%;
+    }
+
+    .login-input {
+        width: 66% !important;
+        margin-left: 16.5%;
+        margin-top: 7.5%;
+    }
+
+    .login-check {
+        margin-left: 66%;
+        margin-top: 2.5%;
+    }
+
+    .main-container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        height: 615px;
+        max-width: 1231px;
+    }
+
+    .fdm-logo-top {
+        background-color: white;
+        width:10%;
+        height: 90%;
+        display: inline-block;
+        position: relative;
+        top: 5%;
+        left: 2.5%;
+    }
+
+    .top-bar-right-content {
+        position: relative;
+        display: inline-block;
+        margin-top: 2em;
+        float: right;
+    }
+
+    .top-bar {
+        background-color:lightslategray;
+        height: 20%;
+    }
+
+    .top-bar-content-rect {
+        display: flex;
+        align-content: flex-end;
+        padding: 5px;
+        background-color:white;
+        border: 1px solid grey;
+        border-bottom: 2px solid lightslategray;
+    }
+
+
+    .system-pages {
+        height: 70%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25%;
+        margin-right: 4%;
+    }
+    .system-pages a {
+        text-decoration: none !important;
+        color: #212529;
+    }
+    .system-pages div {
+        border: 1px solid black;
+        width: 100%;
+        padding: 0.5%;
+    }
+
+    .system-pages div:hover {
+        background-color: lightslategray;
+        cursor: pointer;
+        color: floralwhite;
+    }
+
+    .about-home {
+        display: inline-block;
+        border: 1px solid black;
+        height: 70%;
+        width: 70%;
+        padding: 0.5%;
+    }
+
+    .top-bar-indicator {
+        display: inline-block;
+        position: relative;
+        left: 4%;
+        bottom: 5%;
+        background-color: floralwhite;
+        padding: 5px;
+        width: 10%;
+        text-align: center;
+        margin-right: -10.5%;
+    }
+
+    .timesheet-dating {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 5px;
+        position: relative;
+        left: 2%;
+    }
+
+    .main-content {
+        border: 1px solid black;
+        margin-top: 10px;
+        /*height: 475px;*/
+    }
+    button.btn.add_tag_link.btn-secondary {
+        float: right;
+    }
+
+    .timesheet-switch {
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-top: 1em;
+        margin-right: 2em;
+    }
+
+    .timesheet-worklog {
+        width: 80%;
+        display: inline-block;
+        position: relative;
+        left: 2%;
+        top: 15px;
+    }
+
+    .timesheet-action {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .timesheet-action span i {
+        cursor: pointer;
+    }
+
+    .approval-dating {
+        width: 30%;
+        position: relative;
+        right: -67.5%;
+        top: 5px;
+    }
+
+    .timesheet-approvals {
+        position: relative;
+        top: 5%;
+    }
+
+    .timesheet-block {
+        display: inline-block;
+        width: 30%;
+        margin-left: 2%;
+    }
+
+    .approval-buttons {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .timesheet-row {
+        position: relative;
+        left: 2%;
+    }
+
+    .timesheet-user {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .approval-hours {
+        display:inline-block;
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        width: 25%;
+        position: relative;
+        left: 36.5%;
+    }
+
+
+  }

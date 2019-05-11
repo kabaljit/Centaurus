@@ -1,0 +1,45 @@
+{% extends 'admin-layout.html.twig' %}
+
+{% block title %}Edit Worklog!{% endblock %}
+
+{% block body %}
+<div class="timesheet-worklog" id="new-worklog" style="margin-top: 2%;"  >{{ form_start(form) }}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Issue</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody class="worklogs">
+        <tr><td></td></tr>
+        <tr>
+            <td>
+                {{ form_row(form.issue) }}
+            </td>
+            <td>
+                {{ form_row(form.start) }}
+            </td>
+            <td>
+                {{ form_row(form.end) }}
+            </td>
+            <td>
+                {{ form_row(form.duration) }}
+            </td>
+            <td>
+                {{ form_row(form.description) }}
+            </td>
+
+        </tr>
+        <tr>
+            <td><input type="submit" class="btn btn-info"></td>
+        </tr>
+        </tbody>
+    </table>
+    {{ form_end(form) }}
+</div>
+
+{% endblock %}

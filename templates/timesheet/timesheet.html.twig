@@ -1,0 +1,160 @@
+
+{% extends 'admin-layout.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+
+    <div class="main-content">  {{ form_start(form) }}
+
+            <div style="margin-top: 10px;">
+                <div class="timesheet-dating">
+                    <input type="date" id="input-timesheetDate">
+                    <span>
+                           {{ timesheet.hoursWorked }} /8 HR
+                        </span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar"
+                             style="width:{{ (timesheet.hoursWorked /8)*100  }}%;" aria-valuenow="{{ (timesheet.hoursWorked /8)*100  }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="timesheet-switch">
+                    <button class="btn btn-info" >Switch to approver </button>
+                </div>
+            </div>
+
+            <div class="timesheet-worklog">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Start</th>
+                        <th scope="col">End</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for work  in saveWorklogs %}
+                        <tr id="worklog-{{ work.id }}">
+                            <td id="worklog-{{ work.id }}-issue" name="worklog-{{ work.id }}-issue">{{ work.issue }}</td>
+                            <td id="worklog-{{ work.id }}-start" name="worklog-{{ work.id }}-start">{{ work.start }}</td>
+                            <td id="worklog-{{ work.id }}-end" name="worklog-{{ work.id }}-end">{{ work.end }}</td>
+                            <td id="worklog-{{ work.id }}-duration" name="worklog-{{ work.id }}-duration">{{ work.duration }}</td>
+                            <td id="worklog-{{ work.id }}-description" name="worklog-{{ work.id }}-description">{{ work.description}}</td>
+                            <td>
+                                <div class="timesheet-action">
+                                            <span>
+                                              <a href="/editWorklog/{{ work.id }}">  <i onclick="/editWorklog/ {{ work.id }}" data-toggle="tooltip" title="Edit" class="fas fa-pencil-alt"></i></a>
+                                            </span>
+                                    <span>
+                                                <i id="removeWorklog" onclick="removeWorklog({{ work.timesheet.id }}, {{ work.id  }})" data-timesheet="work" data-toggle="tooltip" title="Remove" class="fas fa-trash"></i>
+                                            </span>
+                                    <span>
+                                                <i onclick="copyWorklog({{ work.id }})" data-toggle="tooltip" title="Copy" class="fas fa-copy"></i>
+                                            </span>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+
+                    </tbody>
+                </table>
+
+                <button onclick="newWorklog()" type="button" class="btn add_tag_link btn-secondary">Add new worklog</button>
+
+            </div>
+
+            <div class="timesheet-newWorklog" id="new-worklog" style="margin-top: 2%; {#% if editId %} {% else %#} display: none; {#% endif %#}">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Issue</th>
+                        <th scope="col">Start</th>
+                        <th scope="col">End</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody class="worklogs" data-prototype="{{ form_widget(form.worklogs.vars.prototype)|e('html_attr') }}">
+    {% for worklog in form.worklogs %}
+        {% if false %}
+                    <tr >
+                        <td>
+                            {{ form_row(worklog.issue) }}
+                        </td>
+                        <td>
+                            {{ form_row(worklog.start) }}
+                        </td>
+                        <td>
+                            {{ form_row(worklog.end) }}
+                        </td>
+                        <td>
+                            {{ form_row(worklog.duration) }}
+                        </td>
+                        <td>
+                            {{ form_row(worklog.description) }}
+                        </td>
+                        <td>
+                            <div class="timesheet-action">
+                                <span>
+                                    <i onclick="addWorklog()" data-toggle="tooltip" title="Add to logged" class="fas fa-plus-square"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+          {% else %}
+            <tr style="display: none" class="form-worklog-">
+                <td >
+                    {{ form_row(worklog.issue) }}
+                </td>
+                <td>
+                    {{ form_row(worklog.start) }}
+                </td>
+                <td>
+                    {{ form_row(worklog.end) }}
+                </td>
+                <td>
+                    {{ form_row(worklog.duration) }}
+                </td>
+                <td>
+                    {{ form_row(worklog.description) }}
+                </td>
+                <td>
+                    <div class="timesheet-action">
+                                    <span>
+                                        <i onclick="addWorklog()" data-toggle="tooltip" title="Add to logged" class="fas fa-plus-square"></i>
+                                    </span>
+                    </div>
+                </td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="submit-worklog">
+                <input type="submit" class="btn btn-info">
+            </div>
+    {{ form_end(form) }}
+
+    </div>
+
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+<script>
+
+{#</script>#}
+    </script>
+{% endblock %}
