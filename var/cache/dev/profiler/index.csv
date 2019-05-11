@@ -403,3 +403,5 @@ b3de5d,127.0.0.1,POST,http://127.0.0.1:8000/editWorklog/2,1557590843,492008,200
 7373d6,127.0.0.1,GET,http://127.0.0.1:8000/timesheet/approve,1557590873,,301
 b32bfe,127.0.0.1,GET,http://127.0.0.1:8000/timesheet/approve/,1557590874,,200
 5f4b46,127.0.0.1,GET,http://127.0.0.1:8000/timesheet,1557590982,,200
+6aec81,127.0.0.1,GET,http://127.0.0.1:8000/timesheet/approve,1557591577,,301
+d15b57,127.0.0.1,GET,http://127.0.0.1:8000/timesheet/approve/,1557591578,,200
