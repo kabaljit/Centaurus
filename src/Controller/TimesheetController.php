@@ -181,24 +181,74 @@ class TimesheetController extends AbstractController
     public function timesheetApprove (Request $request){
 
         $em = $this->getDoctrine()->getManager();
-        $weekDate = '2019-05-12';
+        $weekDate = '2019-05-14';
+
         $users = $em->getRepository(Users::class)->findAll();
 
-        foreach( $users as $user) {
-            $timesheets = $em->getRepository(Timesheet::class)
-                ->findOneByUserAndDates($user->getId(), $weekDate );
+        if(!empty($users)) {
+	        foreach ( $users as $user ) {
+		        $timesheets = $em->getRepository( Timesheet::class )
+		                         ->findOneByUserAndDates( $user->getId(), $weekDate );
+//				print_r($timesheets);
+		        if(!empty($timesheets)) {
 
-    //            foreach( $timesheets as $timesheet) {
-    //               $user->addTotalWeeklyHourWorked($timesheet->get);
-    //            }
+			        foreach ( $timesheets as $timesheet ) {
+				        $user->addTotalWeeklyHourWorked( $timesheet->getHoursWorked() );
+				        $user->setWeeklyTimesheet($timesheet->getStatus());
+			        }
+		        }
 
+		        print_r($user->getTotalWeeklyHourWorked());
+	        }
         }
 
-
-        $users = null;
-        return $this->render('timesheet/approve.html.twig',
-            ['users'=> $users]);
+//        $users = null;
+        return $this->render('timesheet/approve.html.twig',[
+            'users'=> $users,
+	        'date' => $weekDate
+	            ]);
     }
 
+	/**
+	 * @Route("/user/{userID}/approveWeekly/{weekDate}/{status}", name="approve_user_whole_week_timesheet")
+	 */
+	public function approveWeeklyTimesheet($userID, $weekDate, $status)
+	{
+
+		$em = $this->getDoctrine()->getManager();
+
+
+		$timesheet = $em->getRepository(Users::class)->find($userID);
+
+		if(!$timesheet instanceof Users){
+			$message="User is not valid";
+			print_r($message);
+			die();
+		}
+
+		$timesheets = $em->getRepository(Timesheet::class)->findOneByUserAndDates($userID, $weekDate);
+
+
+		if(empty($timesheets)){
+			$message="Timesheet is not valid";
+			print_r($message);
+			die();
+		}
+
+		foreach ($timesheets as $timesheet){
+			$timesheet->setStatus($status);
+		}
+
+		$data = [
+			'success' => true
+		];
+
+		$em->persist($timesheet);
+
+		$em->flush();
+
+//			$this->sendResponseStatus('OK');
+		return new JsonResponse($data);
+	}
 }
 

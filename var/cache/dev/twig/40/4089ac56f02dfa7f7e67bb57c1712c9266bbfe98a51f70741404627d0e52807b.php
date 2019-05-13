@@ -202,6 +202,6 @@ class __TwigTemplate_24413a79e04d15c098e359ee6d330343ec57b4ff31575233baffa1f9b37
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

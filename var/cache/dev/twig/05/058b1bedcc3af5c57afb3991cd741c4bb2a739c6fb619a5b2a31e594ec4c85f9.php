@@ -204,6 +204,6 @@ class __TwigTemplate_c3086baf648df01849e3e7c513eac280e5f7d9095c8871028095b40bab0
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/base.html.twig");
+", "base.html.twig", "/Users/developer/Desktop/Centaurus/templates/base.html.twig");
     }
 }

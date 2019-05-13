@@ -61,6 +61,6 @@ class __TwigTemplate_eb7ebfde2bc59f2f8228b8c4049d165db993526c3fadf9ba06b05cf846e
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
-", "@Framework/Form/choice_options.html.php", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
+", "@Framework/Form/choice_options.html.php", "/Users/developer/Desktop/Centaurus/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
     }
 }

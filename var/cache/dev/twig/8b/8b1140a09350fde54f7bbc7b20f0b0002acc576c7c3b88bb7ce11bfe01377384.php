@@ -408,6 +408,6 @@ class __TwigTemplate_60d7c63a45a6cc24d712b6b30b144c4b437210294f20cf36bb33217acb8
 {% block body %}
     {% include '@Twig/Exception/exception.html.twig' %}
 {% endblock %}
-", "@Twig/Exception/exception_full.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
+", "@Twig/Exception/exception_full.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
     }
 }

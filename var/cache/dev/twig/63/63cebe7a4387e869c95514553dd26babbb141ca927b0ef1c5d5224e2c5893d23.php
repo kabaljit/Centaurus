@@ -95,6 +95,6 @@ class __TwigTemplate_efcb0b596d9d3cece6b3b056457beb1acbe18e67cb1279d72812a59180a
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

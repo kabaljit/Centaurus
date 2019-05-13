@@ -74,7 +74,7 @@ class TimesheetRepository extends ServiceEntityRepository
 
         $dates_array = array();
 
-        if(date('N', strtotime($date)) == 7){
+        if(date('N', strtotime($date)) == 8){
 
             $dates_array['monday'] = date("Y-m-d", strtotime('Monday last week', strtotime($date)));
             $dates_array['sunday'] =  date("Y-m-d", strtotime('Sunday last week', strtotime($date)));
@@ -86,14 +86,16 @@ class TimesheetRepository extends ServiceEntityRepository
 
         }
 
+//        print_r($dates_array);
+
         return $this->createQueryBuilder('t')
             ->andWhere('t.user = :user')
             ->setParameter('user', $user)
-            ->andWhere('t.date >= :date')
-            ->setParameter('date',  $dates_array['monday'])
-            ->andWhere('t.date <= :date')
-            ->setParameter('date',  $dates_array['sunday'])
+            ->andWhere('t.date >= :startWeekDate')
+            ->setParameter('startWeekDate',  $dates_array['monday'])
+            ->andWhere('t.date <= :endWeekDate')
+            ->setParameter('endWeekDate',  $dates_array['sunday'])
             ->getQuery()
-            ->getOneOrNullResult();
+	        ->getResult();
     }
 }

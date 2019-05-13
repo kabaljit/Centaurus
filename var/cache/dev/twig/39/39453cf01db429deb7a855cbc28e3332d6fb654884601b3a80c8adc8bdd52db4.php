@@ -477,6 +477,6 @@ class __TwigTemplate_c464fdf65ef0cd2e02f0f7184f0754426604095481a36df7361370b5755
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

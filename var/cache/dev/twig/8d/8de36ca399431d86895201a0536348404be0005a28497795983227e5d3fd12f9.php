@@ -235,6 +235,6 @@ class __TwigTemplate_09e21a84099c9c081333ebe2535202aa799645cf8463ecf482e2d5d568a
 
 
 {% endblock %}
-", "homepage/homepage.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/homepage/homepage.html.twig");
+", "homepage/homepage.html.twig", "/Users/developer/Desktop/Centaurus/templates/homepage/homepage.html.twig");
     }
 }

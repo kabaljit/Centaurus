@@ -93,6 +93,6 @@ class __TwigTemplate_03378f82e92bd231488f5741d2f7281fbff3137a69f916db5afce8fd07a
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

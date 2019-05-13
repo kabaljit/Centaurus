@@ -106,6 +106,6 @@ class __TwigTemplate_5bab2bd31118f967b8857a10f487faf3aba338aa2002699a2dc884b1362
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
     }
 }

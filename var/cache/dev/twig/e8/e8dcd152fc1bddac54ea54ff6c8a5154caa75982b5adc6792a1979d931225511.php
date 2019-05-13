@@ -71,6 +71,6 @@ class __TwigTemplate_210f82197c8cc9049e46c6066cde373b5b44d056de07716e849f977fc7c
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
-", "@Framework/FormTable/button_row.html.php", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/framework-bundle/Resources/views/FormTable/button_row.html.php");
+", "@Framework/FormTable/button_row.html.php", "/Users/developer/Desktop/Centaurus/vendor/symfony/framework-bundle/Resources/views/FormTable/button_row.html.php");
     }
 }

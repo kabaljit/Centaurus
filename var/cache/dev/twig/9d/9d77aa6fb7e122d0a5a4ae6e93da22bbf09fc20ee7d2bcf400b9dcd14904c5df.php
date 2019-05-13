@@ -169,6 +169,6 @@ class __TwigTemplate_3b29a3f9a15ac8b2eb0a834198cedbc3b8bccd319303986cacc1937777f
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/Users/developer/Desktop/Centaurus/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

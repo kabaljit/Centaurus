@@ -123,6 +123,6 @@ class __TwigTemplate_6b9f04e6801fe8dbb5cef30e8071b280d1693bfb8ca935deb606ad84d7d
         </div>
     </body>
 </html>
-", "@Twig/Exception/error.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
+", "@Twig/Exception/error.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
     }
 }

@@ -67,6 +67,6 @@ class __TwigTemplate_8a8c21756a135ae0017a10bdcbaf5ab318ae70d5c25e3affdf620c06fc4
     public function getSourceContext()
     {
         return new Source("{{ include('@Twig/Exception/error.xml.twig') }}
-", "@Twig/Exception/error.rdf.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.rdf.twig");
+", "@Twig/Exception/error.rdf.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.rdf.twig");
     }
 }

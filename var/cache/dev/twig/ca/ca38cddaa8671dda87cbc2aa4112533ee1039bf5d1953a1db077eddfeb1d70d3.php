@@ -170,6 +170,6 @@ class __TwigTemplate_b9663ff0b4b7084f4ce37a33856b862388d7e9e796ab3bb6e0c1d9e9621
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

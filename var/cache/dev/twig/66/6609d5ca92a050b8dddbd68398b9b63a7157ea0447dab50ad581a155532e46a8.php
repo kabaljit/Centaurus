@@ -225,6 +225,6 @@ class __TwigTemplate_e230c9201f1856a5ed92f4e473a2e4ed5ee948916dfdbddb1d6f41472fe
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/search.html.twig");
     }
 }

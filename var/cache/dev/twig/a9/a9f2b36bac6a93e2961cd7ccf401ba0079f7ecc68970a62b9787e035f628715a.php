@@ -415,6 +415,6 @@ class __TwigTemplate_1637665f5c5da7e7b253d12c8e15eb22e23b731e90ac8f170c790845ee9
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

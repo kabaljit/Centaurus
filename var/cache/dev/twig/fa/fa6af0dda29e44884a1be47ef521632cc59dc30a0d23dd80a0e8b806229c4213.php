@@ -222,6 +222,6 @@ class __TwigTemplate_fe3a893fdce0b2777a521d0283b30b6fbca2fb1b980be8482718f675e2d
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

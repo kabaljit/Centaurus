@@ -70,32 +70,51 @@ class Users implements UserInterface, \Serializable
      */
     public function getTotalWeeklyHourWorked()
     {
-        return $this->total_weekly_hour_worked;
+        return $this->totalWeeklyHourWorked;
     }
 
     /**
-     * @param mixed $total_weekly_hour_worked
+     * @param mixed $totalWeeklyHourWorked
      */
-    public function setTotalWeeklyHourWorked($total_weekly_hour_worked): void
+    public function setTotalWeeklyHourWorked($totalWeeklyHourWorked): void
     {
-        $this->total_weekly_hour_worked = $total_weekly_hour_worked;
+        $this->totalWeeklyHourWorked = $totalWeeklyHourWorked;
     }
 
-    public function addTotalWeeklyHourWorked($total_weekly_hour_worked): void
+    public function addTotalWeeklyHourWorked($totalWeeklyHourWorked): void
     {
-        $this->total_weekly_hour_worked += $total_weekly_hour_worked;
+        $this->totalWeeklyHourWorked += $totalWeeklyHourWorked;
     }
+
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Timesheet", mappedBy="user", cascade={"persist"})
      */
     private $timesheets;
 
-    private $total_weekly_hour_worked;
+    private $totalWeeklyHourWorked;
+
+	private $weeklyTimesheet;
+
+	/**
+	 * @return mixed
+	 */
+	public function getWeeklyTimesheet() {
+		return $this->weeklyTimesheet;
+	}
+
+	/**
+	 * @param mixed $weeklyTimesheet
+	 */
+	public function setWeeklyTimesheet( $weeklyTimesheet ): void {
+		$this->weeklyTimesheet = $weeklyTimesheet;
+	}
 
     public function __construct()
     {
         $this->timesheets = new ArrayCollection();
+
+        $this->totalWeeklyHourWorked = 0;
     }
 
 	/**

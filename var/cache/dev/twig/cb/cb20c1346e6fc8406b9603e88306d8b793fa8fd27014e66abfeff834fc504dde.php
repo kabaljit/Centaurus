@@ -1004,6 +1004,6 @@ class __TwigTemplate_6a69ca36d0dbe614fd2ef23e124150b67048fcfcab69f0cf7d370263646
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

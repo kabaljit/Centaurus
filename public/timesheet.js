@@ -114,6 +114,60 @@ function removeWorklog(timesheetId, worklogId){
 
 }
 
+function approveTimesheet(userId, weekDate){
+
+    $.ajax({
+        url:        '/user/'+userId+'/approveWeekly/'+weekDate+'/approved',
+        type:       'POST',
+        dataType:   'json',
+        async:      true,
+        success: function(data, status) {
+            console.log(data);
+            if (data.success === true){
+                $('.timesheet-row-'+userId+' .approval-buttons-action').html('<span>Approved</span>')
+            }
+
+
+        },
+        error : function(xhr, textStatus, errorThrown) {
+            alert('Ajax request failed.');
+        }
+    });
+
+}
+
+function toogleDetails(userId){
+    $timsheet = $('.timesheet-row-'+userId+'+ .timesheet-worklog')
+
+
+    if($timsheet.css('display') === 'none'){
+        $timsheet.show()
+    }
+    else{
+        $timsheet.hide();
+    }
+}
+
+
+function declineTimesheet(userId, weekDate){
+
+    $.ajax({
+        url:        '/user/'+userId+'/approveWeekly/'+weekDate+'/rejected',
+        type:       'POST',
+        dataType:   'json',
+        async:      true,
+        success: function(data, status) {
+            console.log(data);
+            console.log(data.removeWorklog);
+            $("#worklog-"+data.removeWorklog).remove();
+        },
+        error : function(xhr, textStatus, errorThrown) {
+            alert('Ajax request failed.');
+        }
+    });
+
+}
+
 function removeWorklogJs(clickedId){
     console.log(clickedId);
     clickedTd= $('#worklog-trash-'+clickedId);

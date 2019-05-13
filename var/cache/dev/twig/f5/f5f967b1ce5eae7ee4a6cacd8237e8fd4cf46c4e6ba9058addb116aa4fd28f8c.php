@@ -150,6 +150,6 @@ class __TwigTemplate_b7614a5212035c98785959247cde7326a0c92ee32338f7039547f8a6dec
     </ul>
 </div>
 {% endblock %}
-", "timesheet/index.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/timesheet/index.html.twig");
+", "timesheet/index.html.twig", "/Users/developer/Desktop/Centaurus/templates/timesheet/index.html.twig");
     }
 }

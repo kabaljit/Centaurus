@@ -928,6 +928,6 @@ class __TwigTemplate_ab4c11a2bfae0ded7835a6e44a8447885bafa23b2575b38ded294f65235
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

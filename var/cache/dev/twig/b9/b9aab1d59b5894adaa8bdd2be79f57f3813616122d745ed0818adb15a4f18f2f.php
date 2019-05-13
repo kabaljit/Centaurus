@@ -77,6 +77,6 @@ class __TwigTemplate_d9369cc1ff380a2f1e240d52d42bf79a002b208c59b30917a49810da45b
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

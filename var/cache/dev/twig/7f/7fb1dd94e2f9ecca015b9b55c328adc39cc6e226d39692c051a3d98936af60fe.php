@@ -474,6 +474,6 @@ class __TwigTemplate_533222d1c97b17e5ea78541e5e69ed0f5b7faf74a16af4512c4f5eb7d7c
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

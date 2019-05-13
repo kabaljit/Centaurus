@@ -49,7 +49,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
                         .'|([^/]++)/removeworklog/([^/]++)(*:214)'
                         .'|date/([^/]++)(*:235)'
                     .')'
-                    .'|/editWorklog/([^/]++)(*:265)'
+                    .'|/user/([^/]++)/approveWeekly/([^/]++)/([^/]++)(*:290)'
+                    .'|/editWorklog/([^/]++)(*:319)'
                 .')/?$}sDu',
         ];
         $this->dynamicRoutes = [
@@ -62,7 +63,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
             214 => [[['_route' => 'remove_timesheet_worklog', '_controller' => 'App\\Controller\\TimesheetController::removeWorklog'], ['timesheetid', 'worklogid'], null, null, false, true, null]],
             235 => [[['_route' => 'timesheetBydate', '_controller' => 'App\\Controller\\TimesheetController::listTimesheetByDate'], ['date'], null, null, false, true, null]],
-            265 => [[['_route' => 'editworklog', '_controller' => 'App\\Controller\\WorklogController::editWorklog'], ['id'], null, null, false, true, null]],
+            290 => [[['_route' => 'approve_user_whole_week_timesheet', '_controller' => 'App\\Controller\\TimesheetController::approveWeeklyTimesheet'], ['userID', 'weekDate', 'status'], null, null, false, true, null]],
+            319 => [[['_route' => 'editworklog', '_controller' => 'App\\Controller\\WorklogController::editWorklog'], ['id'], null, null, false, true, null]],
         ];
     }
 }

@@ -39,6 +39,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'remove_timesheet_worklog' => [['timesheetid', 'worklogid'], ['_controller' => 'App\\Controller\\TimesheetController::removeWorklog'], [], [['variable', '/', '[^/]++', 'worklogid', true], ['text', '/removeworklog'], ['variable', '/', '[^/]++', 'timesheetid', true], ['text', '/timesheet']], [], []],
         'timesheetBydate' => [['date'], ['_controller' => 'App\\Controller\\TimesheetController::listTimesheetByDate'], [], [['variable', '/', '[^/]++', 'date', true], ['text', '/timesheet/date']], [], []],
         'approveTimesheet' => [[], ['_controller' => 'App\\Controller\\TimesheetController::timesheetApprove'], [], [['text', '/timesheet/approve/']], [], []],
+        'approve_user_whole_week_timesheet' => [['userID', 'weekDate', 'status'], ['_controller' => 'App\\Controller\\TimesheetController::approveWeeklyTimesheet'], [], [['variable', '/', '[^/]++', 'status', true], ['variable', '/', '[^/]++', 'weekDate', true], ['text', '/approveWeekly'], ['variable', '/', '[^/]++', 'userID', true], ['text', '/user']], [], []],
         'worklog' => [[], ['_controller' => 'App\\Controller\\WorklogController::index'], [], [['text', '/worklog']], [], []],
         'editworklog' => [['id'], ['_controller' => 'App\\Controller\\WorklogController::editWorklog'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/editWorklog']], [], []],
         'index' => [[], ['_controller' => 'App\\Controller\\TimesheetController::listTimeSheet'], [], [['text', '/']], [], []],

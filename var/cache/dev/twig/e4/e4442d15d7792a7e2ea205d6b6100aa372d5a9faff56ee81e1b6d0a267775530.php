@@ -187,6 +187,6 @@ class __TwigTemplate_97302578585d40685ae1ec5bd8b8a1c16e23f184675893940921de7d1d1
         </div>
     </div>
 </div>
-", "@Twig/Exception/traces.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
+", "@Twig/Exception/traces.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
     }
 }

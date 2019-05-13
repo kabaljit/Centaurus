@@ -1283,6 +1283,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 353) == twig
         </table>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

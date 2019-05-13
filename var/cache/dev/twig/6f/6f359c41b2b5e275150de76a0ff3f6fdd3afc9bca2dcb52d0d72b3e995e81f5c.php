@@ -150,6 +150,6 @@ class __TwigTemplate_b93253ff2c669f1f8055485b6d6b382cd1cbf4291bc8a9c940a1ee6fbba
     </ul>
 </div>
 {% endblock %}
-", "worklog/index.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/worklog/index.html.twig");
+", "worklog/index.html.twig", "/Users/developer/Desktop/Centaurus/templates/worklog/index.html.twig");
     }
 }

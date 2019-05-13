@@ -69,6 +69,6 @@ class __TwigTemplate_91472cc2686046554418fd4c484f539b2def845a626048fb3983159c173
     {
         return new Source("{# templates/lucky/number.html.twig #}
 <h1>Your lucky number is {{ number }}</h1>
-", "lucky/number.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/lucky/number.html.twig");
+", "lucky/number.html.twig", "/Users/developer/Desktop/Centaurus/templates/lucky/number.html.twig");
     }
 }
