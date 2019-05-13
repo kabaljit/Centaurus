@@ -109,6 +109,6 @@ class __TwigTemplate_54a7119b1e0fdee408f249a31d76b5c560c109cda1d4c2e7df026a284b5
         Sfjs.loadToolbar('{{ token }}');
     })();
 /*]]>*/</script>
-", "@WebProfiler/Profiler/toolbar_js.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_js.html.twig");
+", "@WebProfiler/Profiler/toolbar_js.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_js.html.twig");
     }
 }

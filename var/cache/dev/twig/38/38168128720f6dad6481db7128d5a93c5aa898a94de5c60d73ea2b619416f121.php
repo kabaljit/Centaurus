@@ -210,6 +210,6 @@ class __TwigTemplate_db211328dc0b3eca3680509a59f12ae61a84a737fc0cad253d7a76e4e87
     {% endfor %}
     </tbody>
 </table>
-", "@Twig/Exception/logs.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
+", "@Twig/Exception/logs.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
     }
 }

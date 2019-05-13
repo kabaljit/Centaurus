@@ -159,6 +159,6 @@ class __TwigTemplate_216b744afdbe66393cd1005d83722fe8e7af4af2ad35f0aab8c9664a73c
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

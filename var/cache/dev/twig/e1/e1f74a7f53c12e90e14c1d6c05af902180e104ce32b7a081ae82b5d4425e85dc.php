@@ -781,6 +781,6 @@ class __TwigTemplate_1991dee2ed82c3c7e8a8db1bde2faf2a6a1701d5f898f42fb6e2071d4b7
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

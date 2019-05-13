@@ -27,7 +27,7 @@ class TimesheetController extends AbstractController
             $currentUser = $this->get('security.token_storage')->getToken()->getUser();
 
             $userId = $currentUser->getId();
-
+//            print_r($userId);
             $timesheet = $em->getRepository('App\Entity\Timesheet')
                 ->findOneByUserAndDate($userId, date('Y-m-d'));
 
@@ -127,11 +127,16 @@ class TimesheetController extends AbstractController
      * Select by date
      */
     public function listTimesheetByDate($date ,Request $request){
+
+
         $securityContext = $this->container->get('security.authorization_checker');
 
         if ($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')) {
+
             $em = $this->getDoctrine()->getManager();
+
             $currentUser = $this->get('security.token_storage')->getToken()->getUser();
+
             $userId = $currentUser->getId();
 
             $timesheet = $em->getRepository('App\Entity\Timesheet')
@@ -164,6 +169,7 @@ class TimesheetController extends AbstractController
                 $em->persist($timesheet);
 
                 $em->flush();
+
             }
 
             return $this->render('timesheet/timesheet.html.twig', [
@@ -174,6 +180,7 @@ class TimesheetController extends AbstractController
         }
 
     }
+
 
     /**
      * @Route ("/timesheet/approve/", name="approveTimesheet")

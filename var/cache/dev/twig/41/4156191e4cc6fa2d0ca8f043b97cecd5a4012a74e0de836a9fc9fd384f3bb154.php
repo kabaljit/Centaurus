@@ -488,6 +488,6 @@ class __TwigTemplate_e0bcf6ebb1b6dba6445f32d4b27f52dab44b79e40d05a07033eaf5b2ef2
         {% endif %}
     </div>
 </div>
-", "@Twig/Exception/exception.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
+", "@Twig/Exception/exception.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
     }
 }

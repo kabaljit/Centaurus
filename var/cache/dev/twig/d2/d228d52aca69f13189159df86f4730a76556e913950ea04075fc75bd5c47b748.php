@@ -248,6 +248,6 @@ class __TwigTemplate_96f438dc26fdcb630347097a378dac30b2045bee449488fe84e76ca1d12
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "admin-layout.html.twig", "/Users/developer/Desktop/Centaurus/templates/admin-layout.html.twig");
+", "admin-layout.html.twig", "/Users/kabaljit/Desktop/Centaurus/templates/admin-layout.html.twig");
     }
 }

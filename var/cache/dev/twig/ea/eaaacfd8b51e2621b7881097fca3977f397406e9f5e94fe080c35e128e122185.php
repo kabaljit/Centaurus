@@ -291,6 +291,6 @@ class __TwigTemplate_277a19594233c4a983e97d1adb9053ad5c2725f284fdb8d6d21a96be6ef
 
 
 {% endblock %}
-", "security/login.html.twig", "/Users/developer/Desktop/Centaurus/templates/security/login.html.twig");
+", "security/login.html.twig", "/Users/kabaljit/Desktop/Centaurus/templates/security/login.html.twig");
     }
 }

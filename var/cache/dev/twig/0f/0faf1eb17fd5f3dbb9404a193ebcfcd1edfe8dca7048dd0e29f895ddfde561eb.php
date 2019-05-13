@@ -1671,6 +1671,6 @@ class __TwigTemplate_8a70ea7f652fb75af5fa12f174bb6f2592fce7dfd186a28e79d020a4d41
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/developer/Desktop/Centaurus/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

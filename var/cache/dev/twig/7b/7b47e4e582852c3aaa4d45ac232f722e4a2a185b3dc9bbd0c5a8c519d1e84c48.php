@@ -217,6 +217,6 @@ class __TwigTemplate_a6bfa2cd14d967a6ae7a4aa7e6e95f2487f783a24d5774bc5e9e8a60609
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

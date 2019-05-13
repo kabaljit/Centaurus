@@ -102,6 +102,6 @@ class __TwigTemplate_fa84e46956312a0f76ad6062aa92d11cafbc12f3da97b7c22825d968b4d
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
     }
 }

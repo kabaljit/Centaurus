@@ -61,6 +61,6 @@ class __TwigTemplate_56a7e1d1a6e32d00efcc923b253d83d5253fd002db82e12e3c283dc803e
     public function getSourceContext()
     {
         return new Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#FFF\" d=\"M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L531 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z\"/></svg>
-", "@Twig/images/chevron-right.svg", "/Users/developer/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
+", "@Twig/images/chevron-right.svg", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
     }
 }

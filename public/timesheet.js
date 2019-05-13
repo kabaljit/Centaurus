@@ -159,7 +159,9 @@ function declineTimesheet(userId, weekDate){
         success: function(data, status) {
             console.log(data);
             console.log(data.removeWorklog);
-            $("#worklog-"+data.removeWorklog).remove();
+            if (data.success === true){
+                $('.timesheet-row-'+userId+' .approval-buttons-action').html('<span>Rejected</span>')
+            }
         },
         error : function(xhr, textStatus, errorThrown) {
             alert('Ajax request failed.');

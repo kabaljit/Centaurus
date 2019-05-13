@@ -408,6 +408,6 @@ class __TwigTemplate_c682c4e4ce8bc3c77fc98d1febf5ee7f49321a63768c9e0a71fe6a589f1
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/Users/developer/Desktop/Centaurus/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/Users/kabaljit/Desktop/Centaurus/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }
