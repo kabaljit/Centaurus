@@ -78,10 +78,18 @@ class __TwigTemplate_1b8ef8971e79cfe6db5a58114916af3734e842dac724871a5ded15c0a32
         </div>
 
         <div class=\"timesheet-approvals\">
-            <div class=\"timesheet-row\">
-
+        ";
+        // line 20
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["users"]) || array_key_exists("users", $context) ? $context["users"] : (function () { throw new RuntimeError('Variable "users" does not exist.', 20, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
+            // line 21
+            echo "            <div class=\"timesheet-row\">
                 <div class=\"timesheet-block timesheet-user\">
-                    Glen Cilia
+                    ";
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "total_weekly_hour_worked", [], "any", false, false, false, 23), "html", null, true);
+            echo "
                 </div>
 
                 <div class=\"timesheet-block\">
@@ -103,92 +111,16 @@ class __TwigTemplate_1b8ef8971e79cfe6db5a58114916af3734e842dac724871a5ded15c0a32
                         <button class=\"btn btn-danger\">Decline</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class=\"timesheet-row\">
+            ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 48
+        echo "
 
-                <div class=\"timesheet-block timesheet-user\">
-                    Keron Goodridge
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        32/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:75%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class=\"timesheet-row\">
-
-                <div class=\"timesheet-block timesheet-user\">
-                    Kabaljit Singh
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        40/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class=\"timesheet-row\">
-
-                <div class=\"timesheet-block timesheet-user\">
-                    Mikhail Churbanov
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        40/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 ";
@@ -212,7 +144,7 @@ class __TwigTemplate_1b8ef8971e79cfe6db5a58114916af3734e842dac724871a5ded15c0a32
 
     public function getDebugInfo()
     {
-        return array (  65 => 4,  56 => 3,  34 => 1,);
+        return array (  122 => 48,  91 => 23,  87 => 21,  83 => 20,  65 => 4,  56 => 3,  34 => 1,);
     }
 
     public function getSourceContext()
@@ -236,10 +168,10 @@ class __TwigTemplate_1b8ef8971e79cfe6db5a58114916af3734e842dac724871a5ded15c0a32
         </div>
 
         <div class=\"timesheet-approvals\">
+        {% for user in users %}
             <div class=\"timesheet-row\">
-
                 <div class=\"timesheet-block timesheet-user\">
-                    Glen Cilia
+                    {{ user.total_weekly_hour_worked }}
                 </div>
 
                 <div class=\"timesheet-block\">
@@ -261,92 +193,11 @@ class __TwigTemplate_1b8ef8971e79cfe6db5a58114916af3734e842dac724871a5ded15c0a32
                         <button class=\"btn btn-danger\">Decline</button>
                     </div>
                 </div>
-
             </div>
 
-            <div class=\"timesheet-row\">
+            {% endfor %}
 
-                <div class=\"timesheet-block timesheet-user\">
-                    Keron Goodridge
-                </div>
 
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        32/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:75%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class=\"timesheet-row\">
-
-                <div class=\"timesheet-block timesheet-user\">
-                    Kabaljit Singh
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        40/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class=\"timesheet-row\">
-
-                <div class=\"timesheet-block timesheet-user\">
-                    Mikhail Churbanov
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-hours\">
-                        40/40 HR
-                    </div>
-                    <div>
-                        <div class=\"progress\">
-                            <div class=\"progress-bar\" role=\"progressbar\"
-                                 style=\"width:100%;\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"timesheet-block\">
-                    <div class=\"approval-buttons\">
-                        <button class=\"btn btn-info\">Details</button>
-                        <button class=\"btn btn-success\">Approve</button>
-                        <button class=\"btn btn-danger\">Decline</button>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 {% endblock %}", "timesheet/approve.html.twig", "/Users/kabaljit/Documents/htdocs /web/uni/centaurus/templates/timesheet/approve.html.twig");

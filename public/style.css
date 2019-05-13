@@ -9,7 +9,9 @@
     }
 
     .fdm-logo {
-        background-color: white;
+        background: url(fdm.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .fdm-logo-login {
@@ -199,6 +201,10 @@
         position: relative;
         left: 36.5%;
     }
-
+    .submit-worklog {
+        position: relative;
+        left: 2%;
+        top: 10%;
+    }
 
   }

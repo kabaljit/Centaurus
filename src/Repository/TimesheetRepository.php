@@ -69,4 +69,31 @@ class TimesheetRepository extends ServiceEntityRepository
 		    ->getOneOrNullResult();
 
     }
+
+    public function findOneByUserAndDates($user, $date){
+
+        $dates_array = array();
+
+        if(date('N', strtotime($date)) == 7){
+
+            $dates_array['monday'] = date("Y-m-d", strtotime('Monday last week', strtotime($date)));
+            $dates_array['sunday'] =  date("Y-m-d", strtotime('Sunday last week', strtotime($date)));
+
+        }else{
+
+            $dates_array['monday'] = date("Y-m-d", strtotime('Monday this week', strtotime($date)));
+            $dates_array['sunday'] =  date("Y-m-d", strtotime('Sunday this week', strtotime($date)));
+
+        }
+
+        return $this->createQueryBuilder('t')
+            ->andWhere('t.user = :user')
+            ->setParameter('user', $user)
+            ->andWhere('t.date >= :date')
+            ->setParameter('date',  $dates_array['monday'])
+            ->andWhere('t.date <= :date')
+            ->setParameter('date',  $dates_array['sunday'])
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
 }

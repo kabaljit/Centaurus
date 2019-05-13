@@ -66,9 +66,32 @@ class Users implements UserInterface, \Serializable
     private $salary;
 
     /**
+     * @return mixed
+     */
+    public function getTotalWeeklyHourWorked()
+    {
+        return $this->total_weekly_hour_worked;
+    }
+
+    /**
+     * @param mixed $total_weekly_hour_worked
+     */
+    public function setTotalWeeklyHourWorked($total_weekly_hour_worked): void
+    {
+        $this->total_weekly_hour_worked = $total_weekly_hour_worked;
+    }
+
+    public function addTotalWeeklyHourWorked($total_weekly_hour_worked): void
+    {
+        $this->total_weekly_hour_worked += $total_weekly_hour_worked;
+    }
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Timesheet", mappedBy="user", cascade={"persist"})
      */
     private $timesheets;
+
+    private $total_weekly_hour_worked;
 
     public function __construct()
     {
